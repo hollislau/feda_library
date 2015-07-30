@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>The Virtual Library</title>
+    <meta name="description" content="An interactive, virtual library to track all of your books">
+    <meta name="author" content="Hollis Lau">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>The Virtual Library</h1>
+    </header>
+    <main>
+      <section id="listing">
+        <h2>Your Catalog:</h2>
+        <table id="1">
+          <h3>Shelf #1: Fantasy</h3>
+          <thead>
+            <tr>
+              <th>Book #</th>
+              <th>Author</th>
+              <th>Title</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="1-1">
+              <td>1</td>
+              <td>Brooks, Terry</td>
+              <td>The Elfstones of Shannara</td>
+            </tr>
+            <tr id="1-2">
+              <td>2</td>
+              <td>Weis, Margaret</td>
+              <td>Dragons of Autumn Twilight</td>
+            </tr>
+          </tbody>
+        </table>
+        <table id="2">
+          <h3>Shelf #2: Science Fiction</h3>
+          <thead>
+            <tr>
+              <th>Book #</th>
+              <th>Author</th>
+              <th>Title</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="2-1">
+              <td>1</td>
+              <td>Card, Orson Scott</td>
+              <td>Ender's Game</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Manage Your Library:</h2>
+        <fieldset>
+          <legend>Add A New Book</legend>
+          <label>Shelf Number</label><br>
+          <input><br>
+          <label>Author (Last name, first name)</label><br>
+          <input id="add-author"><br>
+          <label>Title</label><br>
+          <input><br>
+          <button>Add Book</button>
+        </fieldset>
+        <fieldset>
+          <legend>Remove A Book</legend>
+          <label>Shelf Number</label><br>
+          <input><br>
+          <label>Book Number</label><br>
+          <input><br>
+          <button>Remove Book</button>
+        </fieldset>
+        <fieldset>
+          <legend>Add A New Shelf</legend>
+          <label>Category/Genre</label><br>
+          <input><br>
+          <button>Add Shelf</button>
+        </fieldset>
+        <fieldset>
+          <legend>Remove A Shelf</legend>
+          <label>Shelf Number</label><br>
+          <input><br>
+          <button>Remove Shelf</button>
+        </fieldset>
+      </section>
+    </main>
+  </body>
+</html>
